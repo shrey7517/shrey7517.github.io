@@ -3,98 +3,249 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — [Your Name]</title>
-  <meta name="description" content="Portfolio of [Your Name] — Student, Cloud Computing Open Elective" />
-  <style>
-    :root{--accent:#0b63d6;--bg:#f6f8fb;--card:#ffffff;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#0f1724; -webkit-font-smoothing:antialiased}
-    .wrap{max-width:960px;margin:48px auto;padding:24px}
-    header{display:flex;gap:16px;align-items:center}
-    .avatar{width:86px;height:86px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0bd);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
-    h1{margin:0;font-size:28px}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
-    .about{line-height:1.6}
-    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .tag{background:#eef6ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px}
-    .links a{display:inline-block;margin-right:8px;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid rgba(11,99,214,0.12);color:var(--accent);font-weight:600}
-    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
-    .contact dt{font-weight:700;margin-top:8px}
-    .projects{display:grid;gap:12px;margin-top:12px}
-    .project{padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(6,86,224,0.03), rgba(6,86,224,0.01));border:1px solid rgba(11,99,214,0.04)}
-    .btn-primary{display:inline-block;background:var(--accent);color:#fff;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700}
-    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:68px;height:68px;font-size:22px}}
-  </style>
+  <title>Shreyash Kadam — Portfolio</title>
+  <meta name="description" content="Portfolio of Shreyash Kadam — Electronics & Telecommunication | Drone & Satellite Research" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="avatar">YK</div>
-      <div>
-        <h1>[Your Full Name]</h1>
-        <p class="lead">TY B.Tech — Dept: [IT / MECH / ENTC] • Open Elective — Cloud Computing • [College Name]</p>
-      </div>
-    </header>
 
-    <div class="grid">
-      <main>
-        <section class="card about">
-          <h2>About Me</h2>
-          <p>Final year B.Tech student with interests in cloud computing, web development and embedded systems. This is a simple portfolio created for the Cloud Computing formative assessment — hosted on GitHub Pages.</p>
-          <div class="skills">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Git & GitHub</span>
-            <span class="tag">Cloud: GitHub Pages</span>
-          </div>
-        </section>
+  <a id="top"></a>
 
-        <section class="card projects">
-          <h2>Projects / Coursework</h2>
-          <div class="project">
-            <strong>Portfolio Website (this site)</strong>
-            <p style="margin:6px 0 0">A one-page responsive portfolio hosted on GitHub Pages for the FA - II assignment. Contains About, Skills, Contact and links.</p>
-          </div>
-          <div class="project">
-            <strong>Sample Project 2</strong>
-            <p style="margin:6px 0 0">Brief description of another project or coursework.</p>
-          </div>
-        </section>
-
-        <section class="card" style="margin-top:12px">
-          <h2>Contact</h2>
-          <dl class="contact">
-            <dt>Email</dt><dd>your.email@example.com</dd>
-            <dt>Phone</dt><dd>+91-XXXXXXXXXX</dd>
-            <dt>Live website</dt><dd><a class="btn-primary" href="[PASTE-LIVE-URL-HERE]" target="_blank" rel="noopener noreferrer">Visit my site</a></dd>
-          </dl>
-        </section>
-      </main>
-
-      <aside>
-        <div class="card">
-          <h3>Quick Links</h3>
-          <div class="links" style="margin-top:10px">
-            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:12px">
-          <h3>Submission Info</h3>
-          <p style="margin:6px 0 0;color:var(--muted)">Course: Open Elective IV (Cloud Computing) <br/>Assessment: FA-II (Hosting a website)</p>
-        </div>
-      </aside>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">SK</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#journey">My Journey</a></li>
+        <li><a href="#work">How I Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achieve">Achievements</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Open menu">☰</button>
     </div>
+  </nav>
 
-    <footer>
-      © <span id="year"></span> [Your Name] — Portfolio for FA-II. Hosted on GitHub Pages.
-    </footer>
-  </div>
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Shreyash Kadam</h1>
+        <p class="tagline">
+  A seeker of ideas and maker of meaning — I blend logic with imagination to craft purposeful, intelligent creations.<br>
+  Every project I build is a step toward designing a future where creativity and technology move in harmony.
+</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn outline" href="#contact">Contact Me</a>
+        </div>
+        <ul class="hero-meta">
+          <li><strong>Dept:</strong> ENTC</li>
+          <li><strong>College:</strong> PCCOE</li>
+          <li><strong>Email:</strong> shreyash.kadam777@gmail.com</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <div class="avatar-large">
+          <img src="profile.jpg" alt="Shreyash Kadam">
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </header>
 
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <main class="container">
+
+    <!-- My Journey -->
+    <section id="journey" class="card slide">
+      <h2>My Journey</h2>
+      <p class="lead">I’m an enthusiastic Electronics & Telecommunication engineering student with foundations in digital electronics, communication systems, and embedded programming. I enjoy bridging hardware and software — building practical IoT devices, ARDUINO prototypes, and working on satellite communication simulations. I actively participate in innovation activities like SIH and Avishkar, and I’m writing a research paper on Germanium semiconductor material. :contentReference[oaicite:1]{index=1}</p>
+      <div class="journey-grid">
+        <div class="journey-item">
+          <h3>From Curiosity to Prototypes</h3>
+          <p>Started with Arduino projects — motion detection, clap-controlled automation — and expanded to simulation work in MATLAB Simulink.</p>
+        </div>
+        <div class="journey-item">
+          <h3>Collaboration & Leadership</h3>
+          <p>Member of IEN cell, NSS; participant in SIH and Avishakar; hands-on team contributor and leader on campus initiatives.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I Work -->
+    <section id="work" class="card slide">
+      <h2>How I Work</h2>
+      <div class="process">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Research & Idea</h4>
+          <p>Understand the problem and collect requirements — literature, sensors, and constraints.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Design & Simulate</h4>
+          <p>Prototype circuits & simulate systems (MATLAB/Simulink, breadboard, Arduino).</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Implement & Test</h4>
+          <p>Implement hardware + firmware, test under conditions, iterate until robust.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Deploy & Document</h4>
+          <p>Deploy solution, prepare documentation and (if applicable) research write-up.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card slide">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <img src="project1.jpg" alt="Motion Detection (if image missing, upload project1.jpg)">
+          <h3>Motion Detection System in Darkness</h3>
+          <p>PIR-based motion detection system using Arduino and IR modules for low-light scenarios.</p>
+        </article>
+
+        <article class="project">
+          <img src="project2.jpg" alt="Clap control">
+          <h3>Automated Light & Fan Control via Clap</h3>
+          <p>Sound-detection logic on microcontroller to control fan speeds and lights based on clap patterns.</p>
+        </article>
+
+        <article class="project">
+          <img src="project3.jpg" alt="Satellite simulation">
+          <h3>Satellite Communication Simulation</h3>
+          <p>MATLAB Simulink simulation for antenna alignment and disturbance compensation in satcom links.</p>
+        </article>
+
+        <article class="project featured">
+          <img src="drone_project.jpg" alt="Drone for Space Exploration">
+          <h3>Developing a Drone for Space Exploration (Ongoing)</h3>
+          <p>Autonomous drone prototype integrating sensors, propulsion control and AI navigation — aimed for future exploration research.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achieve" class="card slide">
+      <h2>Achievements & Certifications</h2>
+      <div class="ach-grid">
+        <div class="ach-item">
+          <h4>Innovation Ambassador — Government</h4>
+          <p>Selected as a campus innovation ambassador for government outreach programs.</p>
+        </div>
+        <div class="ach-item">
+          <h4>SIH & Avishakar Participant</h4>
+          <p>Represented projects at hackathons and university research festivals.</p>
+        </div>
+        <div class="ach-item">
+          <h4>Entrepreneurship Skill Test — Completed</h4>
+          <p>Completed foundation-level entrepreneurship training and tests.</p>
+        </div>
+        <div class="ach-item">
+          <h4>State Level Karate — Silver Medalist</h4>
+          <p>Competitive athlete with discipline and teamwork experience.</p>
+        </div>
+        <div class="ach-item">
+          <h4>Trekking & Guiding Experience</h4>
+          <p>Experienced trek guide and cyclist — leadership and endurance outside engineering.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card slide">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-group">
+          <h4>Technical</h4>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Android (Kotlin)</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">IoT</span>
+            <span class="tag">MATLAB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Soft</h4>
+          <div class="tags">
+            <span class="tag">Communication</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">Calm under Pressure</span>
+            <span class="tag">Observant</span>
+            <span class="tag">Energetic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card slide">
+      <h2>Contact</h2>
+      <p class="lead">I’m available for internships, research projects, and collaborations. Send a message and I’ll get back to you.</p>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email</strong><br><a href="mailto:shreyash.kadam777@gmail.com">shreyash.kadam777@gmail.com</a></p>
+          <p><strong>Phone</strong><br>+91-917517028731</p>
+        </div>
+        <div>
+          <p><strong>Links</strong><br>
+            <a href="https://github.com/shreyashkadam" target="_blank">GitHub</a> ·
+            <a href="#" target="_blank">LinkedIn</a>
+          </p>
+          <p><strong>Location</strong><br>Pune, Maharashtra, India</p>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <a class="btn primary" href="mailto:shreyash.kadam777@gmail.com">Email Me</a>
+        <a class="btn outline" href="Shreyash_Kadam_Resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <p>© <span id="year"></span> Shreyash Kadam — Electronics & Telecommunication | Built with care.</p>
+    <a id="to-top" class="to-top" href="#top" title="Back to top">↑</a>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // intersection observer for slide animations
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('visible');
+      });
+    },{threshold:0.18});
+    document.querySelectorAll('.slide').forEach(s=>observer.observe(s));
+
+    // nav toggle for mobile
+    const navToggle = document.getElementById('nav-toggle');
+    navToggle.addEventListener('click', ()=> {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // smooth scroll for nav links
+    document.querySelectorAll('.nav-links a, .to-top, .btn').forEach(link=>{
+      link.addEventListener('click', (e)=>{
+        const href = link.getAttribute('href');
+        if(href && href.startsWith('#')){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'});
+          document.querySelector('.nav-links').classList.remove('open');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
