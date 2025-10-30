@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — [Your Name]</title>
+  <meta name="description" content="Portfolio of [Your Name] — Student, Cloud Computing Open Elective" />
+  <style>
+    :root{--accent:#0b63d6;--bg:#f6f8fb;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#0f1724; -webkit-font-smoothing:antialiased}
+    .wrap{max-width:960px;margin:48px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:86px;height:86px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0bd);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+    .about{line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{background:#eef6ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px}
+    .links a{display:inline-block;margin-right:8px;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid rgba(11,99,214,0.12);color:var(--accent);font-weight:600}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    .contact dt{font-weight:700;margin-top:8px}
+    .projects{display:grid;gap:12px;margin-top:12px}
+    .project{padding:12px;border-radius:8px;background:linear-gradient(180deg, rgba(6,86,224,0.03), rgba(6,86,224,0.01));border:1px solid rgba(11,99,214,0.04)}
+    .btn-primary{display:inline-block;background:var(--accent);color:#fff;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:68px;height:68px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">YK</div>
+      <div>
+        <h1>[Your Full Name]</h1>
+        <p class="lead">TY B.Tech — Dept: [IT / MECH / ENTC] • Open Elective — Cloud Computing • [College Name]</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card about">
+          <h2>About Me</h2>
+          <p>Final year B.Tech student with interests in cloud computing, web development and embedded systems. This is a simple portfolio created for the Cloud Computing formative assessment — hosted on GitHub Pages.</p>
+          <div class="skills">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Cloud: GitHub Pages</span>
+          </div>
+        </section>
+
+        <section class="card projects">
+          <h2>Projects / Coursework</h2>
+          <div class="project">
+            <strong>Portfolio Website (this site)</strong>
+            <p style="margin:6px 0 0">A one-page responsive portfolio hosted on GitHub Pages for the FA - II assignment. Contains About, Skills, Contact and links.</p>
+          </div>
+          <div class="project">
+            <strong>Sample Project 2</strong>
+            <p style="margin:6px 0 0">Brief description of another project or coursework.</p>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Contact</h2>
+          <dl class="contact">
+            <dt>Email</dt><dd>your.email@example.com</dd>
+            <dt>Phone</dt><dd>+91-XXXXXXXXXX</dd>
+            <dt>Live website</dt><dd><a class="btn-primary" href="[PASTE-LIVE-URL-HERE]" target="_blank" rel="noopener noreferrer">Visit my site</a></dd>
+          </dl>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <div class="links" style="margin-top:10px">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Submission Info</h3>
+          <p style="margin:6px 0 0;color:var(--muted)">Course: Open Elective IV (Cloud Computing) <br/>Assessment: FA-II (Hosting a website)</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> [Your Name] — Portfolio for FA-II. Hosted on GitHub Pages.
+    </footer>
+  </div>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
